@@ -1,16 +1,18 @@
 'use strict';
 
-const users = [
-  { name: "Anna", age: 28 },
-  { name: "Marco", age: 17 },
-  { name: "Luca", age: 35 },
-  { name: "Giulia", age: 22 }
-];
+//1 destructuring
+const user = { name: "Elisa", age: 27, city: "Monza" };
+const {name, city} = user;
+//“Uso il destructuring per estrarre valori specifici da oggetti o array in modo più leggibile.”
 
+//2 default parameters
+function saluta (testo = 'ospite') {
+    console.log(`ciao ${testo}`);
+}
+saluta('miao');
+//“Uso i parametri di default per evitare errori quando un valore non viene fornito.”
 
-const overs = users.filter((u) => u.age >= 18);
-console.log(overs);
-
-const somma = overs.reduce((acc, curr) => acc + curr.age, 0 );
-const media = somma / overs.length;
-console.log(media);
+//3 arrow function e map()
+const numeri = [2, 5, 7, 10];
+const doppi = numeri.map(n => n * 2);
+console.log(doppi);
