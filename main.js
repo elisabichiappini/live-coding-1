@@ -32,4 +32,7 @@ console.log(somma(3,4,5)); //12
 const nome = 'Berlinguer';
 console.log(`sono morto nel 1984, mi chiamo ${nome}`)
 
-//7
+//rimuovere duplicati da un array
+const numbers = [1, 2, 2, 3, 4, 4, 5];
+const unici = [...new Set(numbers)];
+console.log(unici)
