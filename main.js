@@ -39,7 +39,7 @@ console.log(unici)
 
 //8 Capitalizzare la prima lettera di ogni parola
 const frase = 'ciao mondo';
-const capitalize = str =>
+const capitalize = (str) =>
   str.split(" ").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
 
 console.log(capitalize(frase));
@@ -50,4 +50,11 @@ const countWorld = frase1.split(" ").reduce((acc, curr) => {
     acc[curr] = (acc[curr] || 0) + 1;
     return acc;
 }, {});
-console.log(countWorld)
+console.log(countWorld);
+
+//10 Sommare solo numeri pari
+const lista = [2, 3, 4, 6, 7, 9, 10];
+const pari = lista.filter(u => u % 2 === 0);
+console.log(pari)
+const somma1 = pari.reduce((acc, curr) => acc + curr, 0 );
+console.log(somma1);
