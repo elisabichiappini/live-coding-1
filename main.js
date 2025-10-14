@@ -16,3 +16,15 @@ saluta('miao');
 const numeri = [2, 5, 7, 10];
 const doppi = numeri.map(n => n * 2);
 console.log(doppi);
+//“Uso .map() perché restituisce un nuovo array, e la arrow function rende il codice più compatto.”
+
+//4 spread
+const x = [0, 2 ,3];
+const y = [9, 11];
+const merge = [...x, ...y];
+console.log(merge);
+
+//5 rest Crea una funzione somma() che accetti un numero qualsiasi di argomenti e ritorni la loro somma.
+const somma = (...nums) => nums.reduce((a, b) => a + b, 0);
+console.log(somma(3,4,5)); //12
+
