@@ -42,4 +42,4 @@ const frase = 'ciao mondo';
 const capitalize = str =>
   str.split(" ").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
 
-console.log(capitalize(frase))
+console.log(capitalize(frase));
