@@ -28,3 +28,8 @@ console.log(merge);
 const somma = (...nums) => nums.reduce((a, b) => a + b, 0);
 console.log(somma(3,4,5)); //12
 
+//6 template literal
+const nome = 'Berlinguer';
+console.log(`sono morto nel 1984, mi chiamo ${nome}`)
+
+//7
