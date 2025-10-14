@@ -43,3 +43,11 @@ const capitalize = str =>
   str.split(" ").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
 
 console.log(capitalize(frase));
+
+//9 Conta quante volte compare ogni parola in una frase
+const frase1 = 'ciao ciao mondo';
+const countWorld = frase1.split(" ").reduce((acc, curr) => {
+    acc[curr] = (acc[curr] || 0) + 1;
+    return acc;
+}, {});
+console.log(countWorld)
