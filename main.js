@@ -32,7 +32,14 @@ console.log(somma(3,4,5)); //12
 const nome = 'Berlinguer';
 console.log(`sono morto nel 1984, mi chiamo ${nome}`)
 
-//rimuovere duplicati da un array
+//7 rimuovere duplicati da un array
 const numbers = [1, 2, 2, 3, 4, 4, 5];
 const unici = [...new Set(numbers)];
 console.log(unici)
+
+//8 Capitalizzare la prima lettera di ogni parola
+const frase = 'ciao mondo';
+const capitalize = str =>
+  str.split(" ").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
+
+console.log(capitalize(frase))
